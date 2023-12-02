@@ -4,10 +4,8 @@ import argparse
 import os
 import time
 import subprocess
-import subprocess as sb
 
-from proxyChecker import check
-from proxyScraper import scrape, scrapers
+from proxyScraper import scrapers
 
 
 if __name__ == "__main__":

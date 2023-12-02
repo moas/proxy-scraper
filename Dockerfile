@@ -19,4 +19,4 @@ COPY . /app
 # Make sure we use the virtualenv:
 ENV PATH="/opt/venv/bin:$PATH"
 
-ENTRYPOINT /app/entrypoint.sh
+ENTRYPOINT /app/run.py
