@@ -52,7 +52,7 @@ def check(file, timeout, method, site, verbose, random_user_agent):
         for line in f:
             proxies.append(Proxy(method, line.replace("\n", "")))
 
-    print(f"Checking {len(proxies)} proxies")
+    verbose_print(verbose, f"Checking {len(proxies)} proxies")
     proxies = filter(lambda x: x.is_valid(), proxies)
     valid_proxies = []
     user_agent = random.choice(user_agents)
@@ -84,7 +84,7 @@ def check(file, timeout, method, site, verbose, random_user_agent):
         for proxy in valid_proxies:
             f.write(str(proxy) + "\n")
 
-    print(f"Found {len(valid_proxies)} valid proxies")
+    verbose_print(verbose, f"Found {len(valid_proxies)} valid proxies")
 
 
 if __name__ == "__main__":

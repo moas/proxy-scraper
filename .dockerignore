@@ -1,0 +1,10 @@
+.dockerignore
+.gitignore
+.idea/
+.vscode/
+.flake8
+.markdownlint.yaml
+.github
+README.md
+dev_requirements.txt
+Dockerfile
